@@ -15,7 +15,12 @@ public class Ordered {
 		int y = in.nextInt();
 		System.out.println("Value for z?");
 		int z = in.nextInt();
-
+		//Include parentheses around inequalities 
+		// &&: and operation
+		// Both arguments must be true for the output to be true
+		// ||: or operation
+		boolean isOrdered = (x < y) && (y < z) || (x > y) && (y > z);
+		System.out.println(isOrdered);
 	}
 
 }
